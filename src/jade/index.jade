@@ -6,9 +6,11 @@ html
     title Alexey Bondarenko - Full stack developer and designer.
     meta(name="description", content="Alexey Bondarenko is a fullstack frontend developer and designer. I create scalable web and mobile projects")
     meta(name="keywords", content="Алексей Бондаренко, Alexey Bondarenko, bondalex, alexeybondarenko, frontend, angularjs, javascript, developer, fullstack")
-    // build:css css/app.css
+    meta(property="og:title", content="Alexey Bondarenko - Full stack developer and designer.")
+    meta(property="og:description", content="I'm full-stack developer and designer. I have strong experience in development of scalable web and mobile applications. I'm ready to design and develop your project.")
+    meta(property="og:image", content="http://bonalex.com/images/profile.jpg")
+
     link(rel='stylesheet', href='css/app.css')
-    //endbuild
     link(rel="icon", type="image/png", href="images/favicon.png")
   body
     .block
@@ -24,6 +26,7 @@ html
       p.spacer follow me
       .block__icons
         .icons
-          a(href="https://www.facebook.com/bondalexey").icon.icon-facebook
-          a(href="https://www.linkedin.com/in/bondalexey").icon.icon-linkedin
-          a.icon.icon-google
+          a(href="https://www.facebook.com/bondalexey", title="Facebook Profile").icon.icon-facebook
+          a(href="https://www.linkedin.com/in/bondalexey", title="LinkedIn Profile").icon.icon-linkedin
+          a(href="https://github.com/alexeybondarenko", title="Github Profile").icon.icon-github
+    include partitials/ga.html
