@@ -105,7 +105,9 @@ gulp.task('deploy-prefix', function() {
 
 gulp.task('deploy', ['deploy-prefix'], function() {
   return gulp.src('./www/**/*')
-    .pipe(ghPages());
+    .pipe(ghPages({
+      branch: 'master'
+    }));
 });
 
 // Base tasks
