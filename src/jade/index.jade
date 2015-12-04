@@ -3,34 +3,27 @@ html
   head(lang='en')
     meta(charset='UTF-8')
     meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no')
-    title <%= appname %>
+    title Alexey Bondarenko - Full stack developer and designer.
+    meta(name="description", content="Alexey Bondarenko is a fullstack frontend developer and designer. I create scalable web and mobile projects")
+    meta(name="keywords", content="Алексей Бондаренко, Alexey Bondarenko, bondalex, alexeybondarenko, frontend, angularjs, javascript, developer, fullstack")
+    // build:css css/app.css
     link(rel='stylesheet', href='css/app.css')
-  body.container
-    .row.row-centered
-      .welcome.col-md-6.col-centered
-        h1 Hello, <%= appname %>
-        p We've created generator to speed up project starting process.
-        p Generator configured project for using:
-        ul
-          li gulp
-          li sass/scss + compass
-        p
-          | We've also added
-          code .editorconfig
-          |  and
-          code .jshintrc
-          |  to simplify your team collaboration.
-        ul
-          li SASS. Boostrap 3 Grid, Akella's Lib (See Github)
-          li Gulp. Deploy Gh-pages, Build
-          li Images. Sprites generators via Compass
-        h2 Requirements
-        ul
-          li Compass
-          li NPM
-          li Bower
-        p I've also included configurations for JSHint, but it had been configured.
-        p
-          i.icon.icon-logo
-
-    script(src='js/app.js')
+    //endbuild
+    link(rel="icon", type="image/png", href="images/favicon.png")
+  body
+    .block
+      .block__user
+        .avatar
+          img(src="images/avatar.png")
+        .user-info
+          h2 Alexey Bondarenko
+          p.light Full-stack Developer
+      .block__content
+        p I'm full-stack developer and designer. I have strong experience in development of scalable web and mobile applications. I'm ready to design and develop your project.
+      a(href="mailto:alexeybondarenko@me.com").btn.btn--pink Contact me
+      p.spacer follow me
+      .block__icons
+        .icons
+          a(href="https://www.facebook.com/bondalexey").icon.icon-facebook
+          a(href="https://www.linkedin.com/in/bondalexey").icon.icon-linkedin
+          a.icon.icon-google
